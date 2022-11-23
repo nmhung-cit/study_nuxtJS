@@ -1,5 +1,13 @@
 <template>
-  <Tutorial/>
+  <div class="root">
+    <header>
+      <ul>
+        <li><nuxt-link to="/">HOME</nuxt-link></li>
+        <li><nuxt-link to="/demo">DEMO</nuxt-link></li>
+        <li><nuxt-link to="/profile">PROFILE</nuxt-link></li>
+      </ul>
+    </header>
+  </div>
 </template>
 
 <script>
