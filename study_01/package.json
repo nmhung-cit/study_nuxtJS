@@ -16,5 +16,8 @@
     "vue-template-compiler": "^2.7.10",
     "yarn": "^1.22.19"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sass": "^1.56.1",
+    "sass-loader": "10"
+  }
 }

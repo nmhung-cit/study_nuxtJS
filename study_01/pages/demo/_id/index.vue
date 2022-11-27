@@ -8,11 +8,10 @@
 export default{
     data(){
         return{
-            
         }
     },
     validate(Context){
-        console.log(Context);
+        console.log(Context)
         return /^[0-9]{6,9}$/.test(Context.params.id);
     }
 }
