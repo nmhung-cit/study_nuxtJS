@@ -1,18 +1,11 @@
 <template>
   <div class="root">
-    <header>
-      <ul>
-        <li><nuxt-link to="/">HOME</nuxt-link></li>
-        <li><nuxt-link to="/demo">DEMO</nuxt-link></li>
-        <li><nuxt-link to="/profile">PROFILE</nuxt-link></li>
-        <li><nuxt-link to="/settings">SETTINGS</nuxt-link></li>
-      </ul>
-    </header>
+    this is home page
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+  // layout:'public'
 }
 </script>
