@@ -28,7 +28,6 @@
         background-color: rgb(64, 64, 64);
         display:flex;
         align-items: center;
-
         ul{
             display: flex;
             justify-content: center;
