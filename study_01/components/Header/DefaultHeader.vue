@@ -45,6 +45,9 @@
                         text-decoration: underline;
                     }
                 }
+                & .nuxt-link-exact-active{
+                    color: red;
+                }
             }
         }
     }
