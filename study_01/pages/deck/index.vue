@@ -12,21 +12,21 @@
                 </nuxt-link>
             </li>
             <li class="card__item">
-                <nuxt-link to="deck/2">
+                <nuxt-link to="/deck/2">
                     <p class="card__item--img"><img src="https://thumbs.dreamstime.com/b/baltic-see-very-nice-pic-klaip%C4%97da-176842928.jpg" alt=""></p>
                     <h3 class="card__item--title">Title</h3>
                     <p class="card__item--des">description</p>
                 </nuxt-link>
             </li>
             <li class="card__item">
-                <nuxt-link to="deck/3">
+                <nuxt-link to="/deck/3">
                     <p class="card__item--img"><img src="https://thumbs.dreamstime.com/b/baltic-see-very-nice-pic-klaip%C4%97da-176842928.jpg" alt=""></p>
                     <h3 class="card__item--title">Title</h3>
                     <p class="card__item--des">description</p>
                 </nuxt-link>
             </li>
             <li class="card__item">
-                <nuxt-link to="deck/4">
+                <nuxt-link to="/deck/4">
                     <p class="card__item--img"><img src="https://thumbs.dreamstime.com/b/baltic-see-very-nice-pic-klaip%C4%97da-176842928.jpg" alt=""></p>
                     <h3 class="card__item--title">Title</h3>
                     <p class="card__item--des">description</p>
