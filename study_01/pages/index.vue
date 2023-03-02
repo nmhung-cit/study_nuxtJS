@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  // layout:'public'
+  // layout:'demo'
 }
 </script>
 <style lang="scss" scoped>
