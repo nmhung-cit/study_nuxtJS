@@ -1,6 +1,9 @@
 <template>
     <div class="container">
-        <h1>List of your decks</h1>
+        <div class="title-list">
+            <h1>List of your decks</h1>
+            <button @click.prevent="opentModal">Create a desk</button>
+        </div>
         <!-- <input v-model="id" type="text" Placeholder="number">
         <input @click="setID" type="button" value="Sent">  -->
         <ul class="card">
@@ -33,6 +36,9 @@
                 </nuxt-link>
             </li>
         </ul>
+        <v-modal name="test">
+            <h1>hello , test modal</h1>
+        </v-modal>
     </div>
 </template>
 <script>
@@ -43,9 +49,9 @@ export default {
         }
     },
     methods:{
-        // setID(){
-        //     this.$router.push(`deck/${this.id}`)
-        // }
+        opentModal(){
+            this.$modal.open({name: "test"})
+        }
     }
 }
 </script>
@@ -65,5 +71,20 @@ export default {
         }
     }
 
+}
+.title-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    & button{
+        padding: 10px;
+        background-color:rgb(216, 170, 2);
+        cursor: pointer;
+        border-radius: 6px;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: bold;
+    }
 }
 </style>
