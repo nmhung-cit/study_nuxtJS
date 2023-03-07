@@ -37,7 +37,10 @@
             </li>
         </ul>
         <v-modal name="test">
-            <h1>hello , test modal</h1>
+            <div class="wrap__modal-test">
+                <h1>hello , test modal</h1>
+                <button class="bnt__close" @click.prevent="closeModal">close</button>
+            </div>
         </v-modal>
     </div>
 </template>
@@ -51,6 +54,9 @@ export default {
     methods:{
         opentModal(){
             this.$modal.open({name: "test"})
+        },
+        closeModal(){
+            this.$modal.close({name: "test"})
         }
     }
 }
@@ -86,5 +92,17 @@ export default {
         color: #ffffff;
         font-weight: bold;
     }
+}
+.wrap__modal-test{
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+.bnt__close{
+    padding: 5px;
+    background-color: rgb(124, 15, 15);
+    color: #fff;
+    box-shadow: 0 0 10px red;
+    cursor: pointer;
 }
 </style>
