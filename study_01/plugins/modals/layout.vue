@@ -1,6 +1,6 @@
 <template>
   <div modal="true">
-    <div class="wrap">
+    <transition class="wrap" name="fade01">
       <div :data-modal="name" v-if="visible" class="modal">
         <div class="modal__mask">
             <div class="modal__content">
@@ -8,7 +8,7 @@
             </div>
         </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
@@ -63,5 +63,11 @@ export default {
   align-items: center;
   justify-content: center;
   z-index: 9999;
+}
+.fade01-enter-active, .fade01-leave-active {
+  transition: opacity .5s;
+}
+.fade01-enter, .fade01-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
